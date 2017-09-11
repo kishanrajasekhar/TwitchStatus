@@ -13,10 +13,22 @@
 </head>
 <body> 
 <div class="container-fluid">
-	<h1 class="text-center">Twitch Streamers</h1>
-	<table id='streamers' class='table table-bordered'>
-		<tr><th>Streamer</th><th>Status</th></tr>
-	</table>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-8"><h1 class="text-center">Twitch Streamers</h1></div>
+			<div class="col-sm-4">
+			<ul>
+				<li>Add user</li>
+				<li id="deleteUser">Delete user</li>
+			</ul>
+			</div>
+		</div>
+		<div class="row">
+			<table id='streamers' class='table table-bordered table-hover'>
+				<tr class='.header'><th id="name_column">Streamer</th><th>Status</th></tr>
+			</table>
+		</div>
+	</div>
 </div>
 </body>
 </html>
